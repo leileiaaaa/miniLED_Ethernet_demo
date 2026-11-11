@@ -1,6 +1,9 @@
 -c
 -I../RTD/include
--I"D:/Project_Source_Code/s32DS_workspace/LiGong_Exemple/S32K344_MAC/S32K344_GMAC_RTD600/board"
+-I"D:/Project_Source_Code/M50K/miniLED_Ethernet_demo/S32K344_MAC/S32K344_GMAC_RTD600/board"
+-ID:/Project_Source_Code/M50K/miniLED_Ethernet_demo/S32K344_MAC/S32K344_GMAC_RTD600/third_party/lwip/src/include
+-ID:/Project_Source_Code/M50K/miniLED_Ethernet_demo/S32K344_MAC/S32K344_GMAC_RTD600/src/middleware/lwip
+-ID:/Project_Source_Code/M50K/miniLED_Ethernet_demo/S32K344_MAC/S32K344_GMAC_RTD600/src/config
 -x assembler-with-cpp
 -ggdb3
 -mcpu=cortex-m7

@@ -24,5 +24,10 @@ Project_Settings/Startup_Code \
 RTD/src \
 board \
 generate/src \
-src \
+src/app/echo \
+src/app \
+src/middleware/lwip \
+third_party/lwip/src/core \
+third_party/lwip/src/core/ipv4 \
+third_party/lwip/src/netif \
 

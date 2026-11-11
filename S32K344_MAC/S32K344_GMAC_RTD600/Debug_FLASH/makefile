@@ -8,7 +8,12 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/subdir.mk
+-include third_party/lwip/src/netif/subdir.mk
+-include third_party/lwip/src/core/ipv4/subdir.mk
+-include third_party/lwip/src/core/subdir.mk
+-include src/middleware/lwip/subdir.mk
+-include src/app/echo/subdir.mk
+-include src/app/subdir.mk
 -include generate/src/subdir.mk
 -include board/subdir.mk
 -include RTD/src/subdir.mk
@@ -33,7 +38,7 @@ S32K344_GMAC_RTD600.siz \
 all: S32K344_GMAC_RTD600.elf secondary-outputs
 
 # Tool invocations
-S32K344_GMAC_RTD600.elf: $(OBJS) D:/Project_Source_Code/s32DS_workspace/LiGong_Exemple/S32K344_MAC/S32K344_GMAC_RTD600/Project_Settings/Linker_Files/linker_flash_s32k344.ld $(USER_OBJS)
+S32K344_GMAC_RTD600.elf: $(OBJS) D:/Project_Source_Code/M50K/miniLED_Ethernet_demo/S32K344_MAC/S32K344_GMAC_RTD600/Project_Settings/Linker_Files/linker_flash_s32k344.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "S32K344_GMAC_RTD600.elf" "@S32K344_GMAC_RTD600.args"  $(USER_OBJS)
